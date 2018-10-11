@@ -1,11 +1,10 @@
-const express = require('express'); // express is a nodejs  web application framework. provides features for web and  mobile applications
-const hbs = require('hbs'); // module that allows for building semantic templates
-const fs = require('fs'); // file system module allows for a filesystem
-
+const express = require('express'); 
+const hbs = require('hbs');
+const fs = require('fs');
 var app = express();
 
 
-hbs.registerPartials(__dirname + '/views/partials') //takes directory for handlebar partials
+hbs.registerPartials(__dirname + '/views/partials')
 app.set('view engine', 'hbs');
 
 
@@ -25,8 +24,7 @@ app.use((req, res, next) => {
 //   res.render('maintenance.hbs');
 // });
 
-app.use(express.static(__dirname + '/public')); //creats a static page using a method called static.
-
+app.use(express.static(__dirname + '/public')); 
 hbs.registerHelper('getCurrentYear', () => {
   return new Date().getFullYear()
 });
