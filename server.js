@@ -1,14 +1,14 @@
-<<<<<<< HEAD
+
 const express = require('express'); // express is a nodejs  web application framework. provides features for web and  mobile applications
 const hbs = require('hbs'); // module that allows for building semantic templates
 const fs = require('fs'); // file system module allows for a filesystem
 
 const port = process.env.PORT || 3000;
-=======
+
 const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
->>>>>>> 7d3bd1a6fa4a71c5429a85d2eef823474f9e903f
+
 var app = express();
 
 
