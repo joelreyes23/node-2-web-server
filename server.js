@@ -5,7 +5,7 @@ const fs = require('fs'); // file system module allows for a filesystem
 
 const port = process.env.PORT || 3000;
 =======
-const express = require('express'); 
+const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 >>>>>>> 7d3bd1a6fa4a71c5429a85d2eef823474f9e903f
@@ -32,7 +32,7 @@ app.use((req, res, next) => {
 //   res.render('maintenance.hbs');
 // });
 
-app.use(express.static(__dirname + '/public')); 
+app.use(express.static(__dirname + '/public'));
 hbs.registerHelper('getCurrentYear', () => {
   return new Date().getFullYear()
 });
