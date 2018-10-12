@@ -2,6 +2,7 @@ const express = require('express'); // express is a nodejs  web application fram
 const hbs = require('hbs'); // module that allows for building semantic templates
 const fs = require('fs'); // file system module allows for a filesystem
 
+const port = process.env.PORT || 3000;
 var app = express();
 
 
@@ -55,6 +56,6 @@ app.get('/bad', (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log('Server is up on port 3000');
+app.listen(port, () => {
+  console.log(`Server is up on port ${port}`);
 });
