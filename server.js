@@ -4,11 +4,6 @@ const hbs = require('hbs'); // module that allows for building semantic template
 const fs = require('fs'); // file system module allows for a filesystem
 
 const port = process.env.PORT || 3000;
-
-const express = require('express');
-const hbs = require('hbs');
-const fs = require('fs');
-
 var app = express();
 
 
